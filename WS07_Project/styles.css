@@ -8,11 +8,19 @@ header {
     color: wheat;
 }
 
-.nav {
-    background-color: maroon;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(78, 18, 18, 0.597);
     align-items: center;
-    padding: 15px;
-    border: 5px solid rgb(150, 0, 0);
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.navbar-logo {
+    width: 40px;
+    height: auto;
+    display: block;
 }
 
 .nav-pills .nav-link.active {
@@ -284,10 +292,17 @@ footer {
 }
 
 .contact {
+  font-size: 1.5rem;
+  color: wheat;
   text-align: center;
-  padding: 50px;
-  color: rgb(213, 186, 137);
-  gap: 2.5px;
+  margin-top: 20px;
+
+  opacity: 0;
+  filter: blur(10px);
+
+  transform: translateY(50px);
+
+  animation: reveal 2s ease forwards;
 }
 
 @keyframes reveal {
