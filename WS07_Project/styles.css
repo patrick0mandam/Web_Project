@@ -11,7 +11,8 @@ header {
 .nav {
     background-color: maroon;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
+    border: 5px solid rgb(150, 0, 0);
 }
 
 .nav-pills .nav-link.active {
@@ -228,7 +229,7 @@ body {
 }
 
 
-.hero-left3 h3:hover, .hero-left3 p:hover {
+.hero-left3 h3:hover, .hero-left3 p:hover{
   background-color: rgb(200, 0, 0);
   color: wheat;
   transform: translateY(-5px);
@@ -266,6 +267,27 @@ footer {
   transform: translateY(50px);
 
   animation: reveal 2s ease forwards;
+}
+
+.qr-code {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+
+  opacity: 0;
+  filter: blur(10px);
+
+  transform: translateY(50px);
+
+  animation: reveal 2s ease forwards;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px;
+  color: rgb(213, 186, 137);
+  gap: 2.5px;
 }
 
 @keyframes reveal {
