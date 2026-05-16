@@ -44,11 +44,6 @@ header {
     font-family: 'Aileron', sans-serif;
 }
 
-figure {
-    text-align: center;
-    margin: 15px;
-}
-
 .carousel-item {
     text-align: center;
     font-size: smaller;
@@ -400,7 +395,6 @@ footer {
   margin: 0;
 }
 
-/* Options for different item heights */
 .masonry-item.small {
   --span: 15;
 }
@@ -441,9 +435,7 @@ footer {
   .responsive-video {
     grid-template-columns: 1fr;
   }
-}
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+
   .masonry-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 12px;
