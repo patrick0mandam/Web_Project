@@ -73,6 +73,11 @@ body {
   width: 500px;
   height: auto;
   align-self: start;
+
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .hero-right h1 {
@@ -98,7 +103,7 @@ body {
   border-radius: 10px;
 }
 
-.hero-right h1:hover, .hero-right p:hover {
+.hero-right h1:hover, .hero-right p:hover{
   background-color: rgb(200, 0, 0);
   color: wheat;
   transform: translateY(-5px);
@@ -119,7 +124,7 @@ body {
   height: auto;
   align-self: flex-end;
   flex: 1;
-  padding-right: 20px;
+  padding-right: 10px;
   
   filter: blur(3px);
 
