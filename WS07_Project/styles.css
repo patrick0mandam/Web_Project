@@ -202,13 +202,26 @@ body {
 }
 
 .hero-logo3 {
-  width: 250px;
-  height: auto;
-  align-self: flex-end;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
   flex: 1;
-  padding-right: 20px;
+  filter: blur(3px);
+  transition: filter 0.5s ease;
 }
+
+.hero-logo3 img {
+  width: 30%;
+  height: auto;
+}
+
+.hero-logo3:hover {
+  filter: blur(0);
+}
+
 
 .hero-left3 h3:hover, .hero-left3 p:hover {
   background-color: rgb(200, 0, 0);
@@ -263,7 +276,7 @@ footer {
 
 @media (max-width: 768px) {
 
-.hero, .hero2 {
+.hero, .hero2, .hero3 {
   flex-direction: column;
   text-align: center;
 }
@@ -274,6 +287,14 @@ footer {
   height: auto;
 }
 
+.hero-logo3 {
+  flex-direction: column-reverse;
+  gap: 20px
+ }
+
+.hero-logo3 img {
+  width: 90%;
+}
 }
 
 .masonry-container {
